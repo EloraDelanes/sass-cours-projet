@@ -23,10 +23,21 @@ h1{
         background-color: $danger;
         color: $light;
     }
-    
+
     &-warning{
         background-color: $warning;
         color: $light;
     }
+}
+
+//mixin
+@mixin camion {
+    border: 2px solid $dark; 
+    background: $success;
+    font-size: 30px;
+}
+
+h1{
+    @include camion();
 }
 
