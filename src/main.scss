@@ -32,3 +32,22 @@ p{
     @include camion(green);
 }
 
+//extend
+.alert{
+    padding: 30px;
+    font-size: 20px;
+    border: 1px solid $dark;
+    color: $light;
+}
+
+.alert-danger{
+    @extend .alert;
+    background: $danger;
+}
+.alert-warning{
+    @extend .alert;
+    background: $warning;
+}
+
+
+
