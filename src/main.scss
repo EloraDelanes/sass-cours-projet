@@ -1,10 +1,6 @@
-$myvariable: blue;
-$danger: #e74c3c;
-$warning: #e67e22;
-$success: #27ae60;
-$dark: #2c3e50;
-$light: #ecf0f1;
-//déclaration de variable a l'avance
+@import "variables.scss";
+@import "mixin.scss";
+
 
 h1{
     color: $dark;
@@ -29,15 +25,10 @@ h1{
         color: $light;
     }
 }
-
-//mixin
-@mixin camion {
-    border: 2px solid $dark; 
-    background: $success;
-    font-size: 30px;
-}
-
 h1{
-    @include camion();
+    @include camion(red);
+}
+p{
+    @include camion(green);
 }
 
