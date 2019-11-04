@@ -1,0 +1,19 @@
+$myvariable: blue;
+$danger: red;
+$warning: rgb(255, 123, 0);
+$success: green;
+$dark: rgb(41, 41, 41);
+//déclaration de variable a l'avance
+
+h1{
+    color: $dark;
+}
+
+.btn{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    &:hover{ /* &: selectionne le parents pour pouvoir l'appliquer*/
+        background-color: $success;
+    }
+}

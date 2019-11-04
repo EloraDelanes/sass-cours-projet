@@ -1,0 +1,15 @@
+h1 {
+  color: #292929;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+.btn:hover {
+  /* &: selectionne le parents pour pouvoir l'appliquer*/
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
