@@ -1,8 +1,9 @@
 $myvariable: blue;
-$danger: red;
-$warning: rgb(255, 123, 0);
-$success: green;
-$dark: rgb(41, 41, 41);
+$danger: #e74c3c;
+$warning: #e67e22;
+$success: #27ae60;
+$dark: #2c3e50;
+$light: #ecf0f1;
 //déclaration de variable a l'avance
 
 h1{
@@ -13,7 +14,19 @@ h1{
     padding: 20px;
     border-radius: 10px;
     font-size: 25px;
+
     &:hover{ /* &: selectionne le parents pour pouvoir l'appliquer*/
-        background-color: $success;
+        background-color: $dark;
+    }
+
+    &-danger{
+        background-color: $danger;
+        color: $light;
+    }
+    
+    &-warning{
+        background-color: $warning;
+        color: $light;
     }
 }
+
